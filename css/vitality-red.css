@@ -1053,3 +1053,10 @@ a.text-primary:focus, a.text-primary:hover {
 .owl-carousel.owl-theme.portfolio-carousel .owl-controls .owl-next {
   right: 0;
 }
+.services {
+  background-color:  rgb(250, 250, 250);
+}
+
+#contact { 
+ background-color: rgb(250,250,250);
+}
