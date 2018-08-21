@@ -6,6 +6,7 @@
 // Load WOW.js on non-touch devices
 var isPhoneDevice = "ontouchstart" in document.documentElement;
 $(document).ready(function() {
+  $('.loader').hide();
   if (isPhoneDevice) {
     //mobile
   } else {
@@ -16,6 +17,9 @@ $(document).ready(function() {
     })
     wow.init();
   }
+  $("body > *").not("body > nav").on('click scroll', function() {
+    $('.navbar-collapse').collapse('hide');
+  });
 });
 
 (function($) {
